@@ -3,7 +3,7 @@ import "./Cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 
-function Cart({ cart }) {
+function Cart({ cart, closeBtnFromCart, resetBtnHandle }) {
   //   console.log("cart", cart);
 
   return (
@@ -14,12 +14,16 @@ function Cart({ cart }) {
           <div key={key} className="content">
             <img src={meal.strMealThumb} alt="" />
             {meal.strMeal}
-            <FontAwesomeIcon icon={faXmarkCircle} className="font-awesome" />
+            <FontAwesomeIcon
+              onClick={() => closeBtnFromCart(meal.idMeal)}
+              icon={faXmarkCircle}
+              className="font-awesome"
+            />
           </div>
         ))}
-        <button>Choose Randomly</button>
-        <br />
-        <button>Reset</button>
+        {/* <button>Choose Randomly</button>
+        <br /> */}
+        <button onClick={resetBtnHandle}>Reset</button>
       </div>
     </div>
   );
