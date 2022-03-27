@@ -1,0 +1,49 @@
+.cart-container {
+  background-color: salmon;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.cart {
+  position: sticky;
+  top: 10px;
+  text-align: center;
+}
+.cart li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 2px 0;
+  width: 95%;
+  border-radius: 5px;
+}
+.cart button {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: salmon;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.cart button:hover {
+  color: #fff;
+  background-color: salmon;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  margin: 5px 0;
+}
+.content img {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 35px;
+}
+.font-awesome {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
